@@ -1,0 +1,7 @@
+<div class="lists_container">
+  <app-shopping-list
+    *ngFor="let sl of shoppingLists"
+    [shoppingList]="sl"
+    [ngClass]="{'big':sl.isBig}">
+  </app-shopping-list>
+</div>

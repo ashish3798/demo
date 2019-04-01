@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="sidebar_container">
+    <div class="sidebar-header">
+      <h2 class="sidebar-header_text">TodoApp</h2>
+    </div>
+    <section class="user-info_container">
+      <div class="user-icon">
+        <img class="user-icon_img" src="assets/img/usericon1.png">
+      </div>
+      <div class="user-name">
+        <span class="user-name_text">Ashish Choudhary</span>
+      </div>
+    </section>
+    <div class="menu_container">
+      
+      <a routerLink="/todo-list" routerLinkActive="active"><div class="menu-item">todo list</div></a>
+      <a routerLink="/shopping-list" routerLinkActive="active"><div class="menu-item">shopping list</div></a>
+      <a routerLink="/contact-us" routerLinkActive="active"><div class="menu-item">contact us</div></a>
+      <a routerLink="/about-us" routerLinkActive="active"><div class="menu-item">about us</div></a>
+      
+    </div>
+  </div>
+
+  <div class="main-content_container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

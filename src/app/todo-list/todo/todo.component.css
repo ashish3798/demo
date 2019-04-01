@@ -1,0 +1,56 @@
+.card_container{
+    display:grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 60px;
+    /* border:2px solid grey; */
+    border-radius:10px;
+    /* background-image: linear-gradient(to right , rgb(241, 175, 145) , rgb(245, 118, 68)); */
+    /* background-image: linear-gradient(to right , rgb(67, 145, 93) , rgb(4, 146, 151)); */
+    background-image: linear-gradient(to right , #fedcd2,#bfd8d2);
+    
+    margin-bottom:10px;
+}
+
+.card-body{
+    grid-column: 1/8;
+    justify-self:center;
+    align-self:center;
+}
+
+.card_text{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.3em;
+    /* color: rgb(34, 31, 31); */
+    color:#df744a;
+    font-weight: 450;
+}
+.card-button{
+    grid-column:8/-1;
+    justify-self:center;
+    align-self:center;
+}
+
+.card-button>button{
+    border-radius:10%;
+    padding:7px 10px 7px 10px;
+    margin:0 5px 0 5px;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.done{
+    background-color: rgb(45, 168, 45);
+    border:2px solid rgb(45, 168, 45);
+   
+}
+
+.remove{
+    background-color:crimson;
+    border:2px solid crimson;
+    
+}
+
+.uline{
+    text-decoration: line-through;
+}

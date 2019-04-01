@@ -1,0 +1,49 @@
+.todo-list_container{
+    /* background: url("../../assets/img/todobg.jpg"); */
+    height:100vh;
+}
+
+.todo-card_container{
+   padding-top:50px;
+   margin:0 20px 0 20px;
+}
+
+.add-todo_container{
+    margin-top:15px;
+    display:grid;
+    grid-template-columns: repeat(8 , 1fr);
+
+    
+    
+}
+
+/* .input_container{
+    grid-column:1/7;
+}
+*/
+
+.button_container{
+    grid-column:7/-1;
+    justify-self:start; 
+    align-self:center;
+} 
+
+.input-box{
+    grid-column:1/7;
+    padding:10px 0 10px 0 ;
+    margin-left:20px;
+    border-radius: 5px;
+    border:2px solid rgb(45, 168, 45);
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-button{
+    padding:10px 20px 10px 20px;
+    background-color: lightblue;
+    border:2px solid lightblue;
+    border-radius: 8%;
+    margin-left:15px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
