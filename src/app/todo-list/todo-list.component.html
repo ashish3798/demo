@@ -1,0 +1,25 @@
+<!-- <div class="image_container">
+  <img src="assets/img/todobg.jpg" height="300px" width=100%>
+</div> -->
+
+<div class="todo-list_container">
+ <div class="todo-card_container" >
+  <app-todo 
+    *ngFor="let td of todos"
+    [todo]="td">
+  </app-todo>
+  </div>
+
+  <div class="add-todo_container">
+    <!-- <div class="input_Container"> -->
+      <input 
+        class="input-box"
+        type="text" 
+        placeholder="enter a new to-do"
+        #todoTitle>
+    <!--  </div> -->
+    <div class="button_container">
+      <button class="add-button" (click)="onAddTodo(todoTitle.value)"> Add todo</button> 
+    </div>  
+  </div> 
+</div>
