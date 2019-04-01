@@ -1,9 +1,0 @@
-<div class="card_container">
-  <div class="card-body">
-    <span class="card_text" [ngClass]="{'uline':doneStatus}">{{todo.title}}</span>
-  </div>
-  <div class="card-button">
-      <button class="done" (click)="onDone()" *ngIf="!doneStatus" >Done</button>
-      <button class="remove" (click)="onRemove()">Remove</button>
-  </div>
-</div>
